@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans";
+}
+
+/* navigation */
+.navigation-header {
+  background-color: #216131;
+  padding: 0 15px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation-header nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo-container > img {
+  width: 10%;
+  margin-top: 15px;
+}
+
+/* Navigation Items */
+.navigation-items {
+  display: flex;
+  gap: 30px;
+}
+.navigation-items a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 26px;
+  font-family: courier;
+}
+
+/* hamburger */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+}
+
+footer {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  padding-top: 10px;
+  background-color: #216131;
+  color: white;
+  justify-content: space-between;
+}
+footer .time {
+  padding-left: 10px;
+}
+footer .footer-icons {
+  padding-right: 20px;
+  padding-top: 0.5%;
+  font-size: 1.5rem;
+}
+
+.title-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-page h1 {
+  margin-top: 9%;
+  font-family: courier;
+  font-size: 7rem;
+  font-weight: 100;
+  text-align: center;
+}
+.title-page h3 {
+  font-size: 2.5rem;
+  font-family: "Caveat";
+  margin-bottom: 25px;
+}
+.title-page a {
+  text-decoration: none;
+  border: 2px solid #216131;
+  color: #216131;
+  font-size: 1.5rem;
+  padding: 4px 10px;
+  margin-bottom: 50px;
+}
+.title-page h2 {
+  font-family: courier;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+.review-box {
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 110px;
+}
+.review-box .review-tile {
+  background-color: #F2FEF1;
+  flex-direction: row;
+  min-width: 400px;
+  height: 150px;
+  margin: 20px;
+  padding: 10px;
+}
+.review-box .review-tile .review-title {
+  background-color: #F2FEF1;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+.review-box .review-tile i {
+  color: rgb(255, 214, 7);
+}
+
+.menu-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.menu-top h2 {
+  font-family: courier;
+  font-size: 7rem;
+}
+.menu-top a {
+  text-decoration: none;
+  color: black;
+  font-family: "Caveat";
+  font-size: 2rem;
+  padding: 10px 20px;
+}
+
+.menu-container {
+  background-color: white;
+  width: 100%;
+  min-height: 80%;
+}
+
+.menu-container h3 {
+  text-align: center;
+  font-size: 3em;
+  font-family: "Caveat";
+}
+
+.price-diet {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-items-cont {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.title-price {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.title-price,
+.title-price .menu-price {
+  font-size: 1em;
+}
+
+.meun-heading {
+  font-family: courier;
+}
+
+.location-cont {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 110px;
+}
+.location-cont p {
+  font-size: 1.2rem;
+}
+
+.location-info {
+  padding-top: 10px;
+}
+
+/* Tablet Size */
+@media screen and (max-width: 900px) {
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+  }
+  .hamburger #closeHam {
+    display: none;
+  }
+  .navigation-items {
+    display: none;
+    /* Styling of open mobile menu to come */
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 58px;
+    width: 100%;
+    height: calc(100vh - 58px);
+    background-color: crimson;
+    padding-top: 60px;
+    gap: 10vh;
+  }
+  .menu-item {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu-item {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Style.css.map */
