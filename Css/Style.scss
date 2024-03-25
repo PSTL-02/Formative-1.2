@@ -11,6 +11,12 @@
     font-family: $body-font;
 }
 
+body {
+    background-image: url(../imgs/Backround-Comp.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 /* navigation */
 .navigation-header {
@@ -114,7 +120,7 @@ footer {
         margin-bottom: 50px;
     }
 
-    h2{
+    h2 {
         font-family: $header-font;
         font-weight: 100;
         font-size: 2rem;
@@ -155,7 +161,8 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    h2{
+
+    h2 {
         font-family: $header-font;
         font-size: 7rem;
     }
@@ -165,7 +172,7 @@ footer {
         color: $text-color;
         font-family: $sub-font;
         font-size: 2rem;
-       padding: 10px 20px;
+        padding: 10px 20px;
     }
 }
 
@@ -173,12 +180,12 @@ footer {
     background-color: $secondary-color;
     width: 100%;
     min-height: 80%;
-}
 
-.menu-container h3 {
-    text-align: center;
-    font-size: 3em;
-    font-family: $sub-font;
+    h3 {
+        text-align: center;
+        font-size: 3em;
+        font-family: $sub-font;
+    }
 }
 
 .price-diet {
@@ -212,14 +219,14 @@ footer {
     justify-content: space-between;
 }
 
-.title-price ,
+.title-price,
 .title-price .menu-price {
     font-size: 1em;
 }
 
-.meun-heading{
+.meun-heading {
     font-family: $header-font;
-    
+
 }
 
 // location
@@ -230,9 +237,10 @@ footer {
     align-items: center;
     flex-direction: column;
     margin-bottom: 110px;
-    p{
+
+    p {
         font-size: 1.2rem;
-    }   
+    }
 }
 
 .location-info {
@@ -242,7 +250,14 @@ footer {
 
 
 /* Tablet Size */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url(../imgs/backround-tablet.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
     .hamburger {
         display: flex;
         cursor: pointer;
@@ -263,18 +278,30 @@ footer {
         top: 58px;
         width: 100%;
         height: calc(100vh - 58px);
-        background-color: crimson;
+        background-image: url(../imgs/ham-back.jpg);
+        background-position: center;
+        background-size: cover;
         padding-top: 60px;
         gap: 10vh;
+
+        a {
+            color: black;
+            font-size: 3rem;
+        }
     }
 
     .menu-item {
         width: 48%;
     }
+
+    .logo-container>img {
+        width: 15%;
+        margin-top: 5px;
+    }
 }
 
 // phone size
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
     .menu-item {
         width: 100%;
     }

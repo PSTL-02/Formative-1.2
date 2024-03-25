@@ -7,6 +7,13 @@
   font-family: "PT Sans";
 }
 
+body {
+  background-image: url(../imgs/Backround-Comp.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 /* navigation */
 .navigation-header {
   background-color: #216131;
@@ -150,7 +157,6 @@ footer .footer-icons {
   width: 100%;
   min-height: 80%;
 }
-
 .menu-container h3 {
   text-align: center;
   font-size: 3em;
@@ -214,7 +220,13 @@ footer .footer-icons {
 }
 
 /* Tablet Size */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url(../imgs/backround-tablet.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
   .hamburger {
     display: flex;
     cursor: pointer;
@@ -232,15 +244,25 @@ footer .footer-icons {
     top: 58px;
     width: 100%;
     height: calc(100vh - 58px);
-    background-color: crimson;
+    background-image: url(../imgs/ham-back.jpg);
+    background-position: center;
+    background-size: cover;
     padding-top: 60px;
     gap: 10vh;
+  }
+  .navigation-items a {
+    color: black;
+    font-size: 3rem;
   }
   .menu-item {
     width: 48%;
   }
+  .logo-container > img {
+    width: 15%;
+    margin-top: 5px;
+  }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
   .menu-item {
     width: 100%;
   }
